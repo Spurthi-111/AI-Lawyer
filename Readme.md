@@ -26,7 +26,7 @@ To run the AI-Lawyer project, follow these steps:
 
 1️⃣ Clone the Project
     
-    git clone <your_repo_url>
+    git clone <url>
 
 
 2️⃣ Open Terminal & Activate Virtual Environment
