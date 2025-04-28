@@ -1,5 +1,5 @@
 # AI-Lawyer Chatbot: A Retrieval-Augmented Generation (RAG) System for PDF Querying
-Welcome to AI-Lawyer, a powerful Retrieval-Augmented Generation (RAG) system that allows you to interact with PDFs and get accurate answers to complex questions about your documents. This project integrates the capabilities of Deepseek, LangChain, Streamlit, and Groq Cloud APIs for a user-friendly and intelligent document assistant experience.
+Welcome to AI-Lawyer Chatbot, a powerful Retrieval-Augmented Generation (RAG) system that allows you to interact with PDFs and get accurate answers to complex questions about your documents. This project integrates the capabilities of Deepseek, LangChain, Streamlit, and Groq Cloud APIs for a user-friendly and intelligent document assistant experience.
 
 ## Features
 Retrieve answers from PDFs: Chat with your local PDF files and get detailed answers based on the content.
@@ -67,3 +67,9 @@ If you encounter an error about a missing API key in Command Prompt (cmd.exe), r
    Finally, start the Streamlit app:
 
     streamlit run frontend.py
+
+📸 Output
+The following screenshots showcase the successful execution and response of the AI-Lawyer Chatbot project:
+
+![Output-1](https://github.com/user-attachments/assets/e22bab46-211f-4f1c-9da8-25bf61d71e1d)
+![Output-2](https://github.com/user-attachments/assets/baf5c73c-4163-4a07-8f29-4e1218445ad2)
