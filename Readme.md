@@ -1,4 +1,4 @@
-# AI-Lawyer: A Retrieval-Augmented Generation (RAG) System for PDF Querying
+# AI-Lawyer Chatbot: A Retrieval-Augmented Generation (RAG) System for PDF Querying
 Welcome to AI-Lawyer, a powerful Retrieval-Augmented Generation (RAG) system that allows you to interact with PDFs and get accurate answers to complex questions about your documents. This project integrates the capabilities of Deepseek, LangChain, Streamlit, and Groq Cloud APIs for a user-friendly and intelligent document assistant experience.
 
 ## Features
