@@ -1,123 +1,69 @@
-# Project README
+# AI-Lawyer: A Retrieval-Augmented Generation (RAG) System for PDF Querying
+Welcome to AI-Lawyer, a powerful Retrieval-Augmented Generation (RAG) system that allows you to interact with PDFs and get accurate answers to complex questions about your documents. This project integrates the capabilities of Deepseek, LangChain, Streamlit, and Groq Cloud APIs for a user-friendly and intelligent document assistant experience.
 
-This is a Python project with three Python files representing different phases of the project. Below are the instructions for setting up the environment and running the project.
+## Features
+Retrieve answers from PDFs: Chat with your local PDF files and get detailed answers based on the content.
 
----
+Deepseek-powered reasoning: Leverage Ollama's Deepseek-r1 LLM model, known for its strong reasoning capabilities.
 
-## Table of Contents
-1. [Environment Setup](#environment-setup)
-    - [Using Pipenv](#using-pipenv)
-    - [Using Conda](#using-conda)
-    - [Using Pip](#using-pip)
-2. [Running the Project](#running-the-project)
+LangChain integration: Enhance the retrieval process using LangChain's powerful pipeline to fetch relevant data.
 
----
+Interactive UI with Streamlit: A user-friendly interface that allows you to query PDFs in real time.
 
-## Environment Setup
+Cloud Integration: API keys from Groq Cloud are used to integrate cloud-powered computation for improved performance.
 
-### Using Pipenv
-Pipenv is a tool that manages dependencies and virtual environments for Python projects.
+## Technologies Used
+Deepseek: Ollama's LLM model that helps with strong reasoning.
 
-1. Install Pipenv if you don't have it:
-    ```
-    pip install pipenv
-    ```
+LangChain: A framework for building RAG pipelines and interacting with various document sources.
 
-2. Navigate to the project directory and create a virtual environment:
-    ```
-    pipenv install
-    ```
+Streamlit: A framework to create interactive web applications for real-time querying of PDFs.
 
-3. Activate the virtual environment:
-    ```
-    pipenv shell
-    ```
+Groq Cloud API: Used for accessing powerful cloud resources for enhanced computational performance.
 
-4. (Optional) Install any additional dependencies:
-    ```
-    pipenv install <package_name>
-    ```
+## Getting Started
+To run the AI-Lawyer project, follow these steps:
 
----
+1️⃣ Clone the Project
+    
+    >git clone <your_repo_url>
 
-### Using Conda
-Conda is an open-source package management system and environment management system.
 
-1. Create a new conda environment:
-    ```
-    conda create -n myenv python=3.9
-    ```
+2️⃣ Open Terminal & Activate Virtual Environment
 
-2. Activate the environment:
-    ```
-    conda activate myenv
-    ```
+    >cd filemane
+    
+    >pipenv shell
 
-3. Install dependencies from `requirements.txt` (if available):
-    ```
-    pip install -r requirements.txt
-    ```
+    
+3️⃣ Install & Pull the Ollama Model
+   Make sure you have Ollama installed, then pull the required model:
 
----
+    >ollama pull deepseek-r1:1.5b
 
-### Using Pip
-Pip is the standard package installer for Python.
+    
+4️⃣ Create a .env File
+   In the project root directory, create a file named .env and add your Groq API key:
 
-1. Install virtualenv if you don't have it:
-    ```
-    pip install virtualenv
-    ```
+    GROQ_API_KEY="your GROQ_API_KEY"
 
-2. Create a virtual environment:
-    ```
-    virtualenv venv
-    ```
+    
+5️⃣ Run the Vector Database Script
 
-3. Activate the virtual environment:
-    - On Windows:
-        ```
-        venv\Scripts\activate
-        ```
-    - On macOS/Linux:
-        ```
-        source venv/bin/activate
-        ```
+    >python vector_database.py
 
-4. Install dependencies from `requirements.txt` (if available):
-    ```
-    pip install -r requirements.txt
-    ```
 
----
+6️⃣ Run the RAG Pipeline Script
 
-## Running the Project
+    >python rag_pipeline.py
+    
+📝 Note:
+If you encounter an error about a missing API key in Command Prompt (cmd.exe), run:
 
-The project consists of three Python files, each corresponding to a different phase of the project:
+    >set GROQ_API_KEY=your GROQ_API_KEY
 
-### To run the App directly
-```
-streamlit run main.py
-```
 
-### To run app in different phases
+7️⃣ Launch the Frontend
+   Finally, start the Streamlit app:
 
-1. Phase 1: Run the first phase using:
-    ```
-    streamlit run frontend.py
-    ```
-
-2. Phase 2: Run the second phase using:
-    ```
-    python vector_database.py
-    ```
-
-3. Phase 3: Run the third phase using:
-    ```
-    python rag_pipeline.py
-    ```
-
-Ensure that all dependencies are installed before running the scripts.
-
----
-
-If you encounter any issues, feel free to reach out or check the documentation for the tools mentioned above.
+    >streamlit run frontend.py
