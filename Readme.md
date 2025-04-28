@@ -26,20 +26,20 @@ To run the AI-Lawyer project, follow these steps:
 
 1️⃣ Clone the Project
     
-    >git clone <your_repo_url>
+    git clone <your_repo_url>
 
 
 2️⃣ Open Terminal & Activate Virtual Environment
 
-    >cd filemane
+    cd filemane
     
-    >pipenv shell
+    pipenv shell
 
     
 3️⃣ Install & Pull the Ollama Model
    Make sure you have Ollama installed, then pull the required model:
 
-    >ollama pull deepseek-r1:1.5b
+    ollama pull deepseek-r1:1.5b
 
     
 4️⃣ Create a .env File
@@ -50,20 +50,20 @@ To run the AI-Lawyer project, follow these steps:
     
 5️⃣ Run the Vector Database Script
 
-    >python vector_database.py
+    python vector_database.py
 
 
 6️⃣ Run the RAG Pipeline Script
 
-    >python rag_pipeline.py
+    python rag_pipeline.py
     
 📝 Note:
 If you encounter an error about a missing API key in Command Prompt (cmd.exe), run:
 
-    >set GROQ_API_KEY=your GROQ_API_KEY
+    set GROQ_API_KEY=your GROQ_API_KEY
 
 
 7️⃣ Launch the Frontend
    Finally, start the Streamlit app:
 
-    >streamlit run frontend.py
+    streamlit run frontend.py
