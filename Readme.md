@@ -37,12 +37,14 @@ To run the AI-Lawyer project, follow these steps:
 
     
 3️⃣ Install & Pull the Ollama Model
+   
    Make sure you have Ollama installed, then pull the required model:
 
     ollama pull deepseek-r1:1.5b
 
     
 4️⃣ Create a .env File
+   
    In the project root directory, create a file named .env and add your Groq API key:
 
     GROQ_API_KEY="your GROQ_API_KEY"
@@ -58,7 +60,8 @@ To run the AI-Lawyer project, follow these steps:
     python rag_pipeline.py
     
 📝 Note:
-If you encounter an error about a missing API key in Command Prompt (cmd.exe), run:
+
+   If you encounter an error about a missing API key in Command Prompt (cmd.exe), run:
 
     set GROQ_API_KEY=your GROQ_API_KEY
 
@@ -67,6 +70,7 @@ If you encounter an error about a missing API key in Command Prompt (cmd.exe), r
    Finally, start the Streamlit app:
 
     streamlit run frontend.py
+
 
 📸 Output
 The following screenshots showcase the successful execution and response of the AI-Lawyer Chatbot project:
